@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color:#185abd;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo{
+    height: 50px;
+    cursor: pointer;
+}
+.navLinks{
+    list-style: none;
+}
+.navLinks li{
+    display: inline-block;
+    padding: 0 20px;
+    margin-left: 0;
+}
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover{
+    color: #53bbf4;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 7%;
+    box-shadow: 0 15px 10px -15px #1111112b;
+    background-color: white;
+    height: 60px;
+}
+.Login{
+    background-color: #53bbf4;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 9px 25px;
+    border-radius: 20px;
+    border:2px solid #53bbf4;
+}
+.Login:hover{
+    background-color: transparent;
+    color: #53bbf4;
+}
+.SignUp{
+    background-color: transparent;
+    border:2px solid #185abd;
+    color: #185abd;
+    transition: all 0.3s ease 0s;
+    padding: 9px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.SignUp:hover{
+    background-color: #185abd;
+    color: white;
+}
+.RightButtons{
+    margin-left: auto;
+}
+
+@media (max-width: 900px)
+{
+    .navLinks li{
+        padding: 0 10px;
+    }
+
+    .SignUp{
+        padding: 9px 15px;
+    }
+    .Login{
+        padding: 9px 15px;
+    }
+    button{
+        font-size: 13px;
+    }
+}
+.mobile-menu{
+    display: none;
+}
+@media (max-width: 768px)
+{
+   .MenuToggle{
+       width: 38px;
+       height: 40px;
+       border-radius: 6px;
+       background-color: #53bbf4;
+       cursor: pointer;
+       margin-left: auto;
+       z-index: 99;
+       text-align: center
+   }
+   
+   .MenuToggle .bar,
+   .MenuToggle:before,
+   .MenuToggle:after{
+    content: '';
+	display: block;
+	width: 70%;
+	height: 5px;
+	background-color: #FFF;
+	margin: 6px 0px;
+    margin-left: 5.275px;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+    border-radius: 8px;
+  }  
+.MenuToggle.is-active:before {
+	-webkit-transform: rotate(-45deg) translate(-8px, 6px);
+	transform: rotate(-45deg) translate(-8px, 6px)
+}
+
+.MenuToggle.is-active:after {
+	-webkit-transform: rotate(45deg) translate(-9px, -8px);
+	transform: rotate(45deg) translate(-9px, -8px)
+}
+
+
+.MenuToggle.is-active .bar {
+	opacity: 0
+}
+   nav{
+       display: none;
+   }
+   .RightButtons{
+       display: none;
+   }
+
+   .mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: white;
+	padding-top: 120px;
+	-webkit-transition: 0.4s;
+	transition: 0.4s
+}
+.mobile-menu .navLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-menu .navLinks li{
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid #53bbf4;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+}
+.mobile-menu .navLinks li a{
+    color: #53bbf4;
+}
+
+.mobile-menu.is-active {
+	left: 0;
+}
+.MenuButtonsMobile{
+    position: absolute;
+    bottom: 40%;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+}
+.socialMedia{
+    position: absolute;
+    bottom: 10px;
+}
+.socialMedia a{
+    margin: 3px;
+}
+.socialMedia a i{
+color: #53bbf4;}
+.SignUpMobile{
+    background-color: transparent;
+    border:2px solid #185abd;
+    color: #185abd;
+    transition: all 0.3s ease 0s;
+    padding: 9px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+.LoginMobile{
+    background-color: #53bbf4;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 9px 25px;
+    border-radius: 20px;
+    border:2px solid #53bbf4;
+    width: 100%;
+}
+.sm{
+    width: 40%;
+    margin-right: 10px;
+}
+.lm{
+    width: 60%;
+}
+}

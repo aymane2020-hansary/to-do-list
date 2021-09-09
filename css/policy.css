@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+
+
+
+label,span,button,h1,h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color:#185abd;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:border-color .25s ease, box-shadow .25s ease;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    padding: 30px 7%;
+    box-shadow: 0 15px 10px -15px #1111112b;
+    top:0;
+    width: 100%;
+    position:fixed;
+    z-index: 99;
+}
+#nav-menu .logo{
+    height: 50px;                                      
+    cursor: pointer;
+ }
+
+ .banner{
+   width:100%;
+   height: 220px;
+   background-color: #d5f0ff;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .banner h2{
+     color: #53bbf4;
+     font-size: 28px;
+     margin-top: 59px;
+ }
+
+ .content{
+     padding:40px 10%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .content p{
+    font-family: 'Montserrat', sans-serif;
+    color: #525252;
+    margin-bottom: 20px;
+ }
+ .content #ar{
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    font-size: 20px;
+ }
+ .content h1{
+     margin-bottom: 10px;
+ }
+
+ .foot{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #efeff0;
+    padding-top: 50px;
+}
+.foot img{
+    width: 150px;
+    margin-bottom: 5px;
+}
+.foot .h2{
+    color: #091e42;
+    font-size: 15px;
+}
